@@ -1,0 +1,31 @@
+#text-enlarger-overlay {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    z-index: 99999;
+    font-size: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    color: #000;
+}
+
+#text-enlarger-overlay button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 6px;
+}
+#text-enlarger-overlay button:hover {
+    background: #d32f2f;
+}
