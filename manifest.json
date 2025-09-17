@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Text Enlarger MVP",
+  "version": "0.1",
+  "description": "Enlarge selected text on any webpage",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Text Enlarger"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
