@@ -13,5 +13,14 @@
       "js": ["content.js"],
       "css": ["styles.css"]
     }
-  ]
+  ],
+  "commands": {
+    "toggle-text-enlarger": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "Command+Shift+E"
+      },
+      "description": "Toggle text enlarger overlay"
+    }
+  }
 }
