@@ -51,7 +51,7 @@ Installation & Usage
 
 Clone the repository:
 
-git clone https://github.com/<Tafarigit>/<text-enlarger-overlay>.git
+git clone https://github.com/Tafarigit/text-enlarger-overlay.git
 
 
 Open content.js in your browser extension or local dev environment.
