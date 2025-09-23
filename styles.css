@@ -1,31 +1,136 @@
+/* Main overlay container */
 #text-enlarger-overlay {
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 300px;
-    max-height: 200px;
-    overflow-y: auto;
+    height: 200px;
+    max-height: 400px;
+    min-width: 250px;
+    min-height: 150px;
+    resize: both;
+    overflow: hidden; /* Important for resize to work properly */
     background: #fff;
     border: 2px solid #333;
     border-radius: 10px;
-    padding: 15px;
     z-index: 99999;
-    font-size: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    color: #000;
+    box-sizing: border-box;
 }
 
-#text-enlarger-overlay button {
+/* Header - fixed at top of overlay */
+#overlay-header {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    background: #f9f9f9;
+    border-bottom: 2px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+/* Text container - below header with its own scroll */
+#overlay-text {
+    position: absolute;
+    top: 50px; /* Height of header */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Controls container */
+#overlay-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* Control buttons */
+#overlay-controls button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    background: #2196f3;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    min-width: 36px;
+    height: 28px;
+}
+
+#overlay-controls button:hover {
+    background: #1976d2;
+}
+
+/* Font size display */
+#font-size-display {
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+    padding: 4px 8px;
+    background: #e0e0e0;
+    border-radius: 3px;
+    min-width: 35px;
+    text-align: center;
+    margin-left: 4px;
+}
+
+/* Close button */
+#text-enlarger-close {
     cursor: pointer;
     background: #f44336;
     color: #fff;
     border: none;
-    border-radius: 3px;
-    padding: 2px 6px;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#text-enlarger-overlay button:hover {
+
+#text-enlarger-close:hover {
     background: #d32f2f;
+}
+
+/* Custom scrollbar */
+#overlay-text::-webkit-scrollbar {
+    width: 8px;
+}
+
+#overlay-text::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#overlay-text::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+#overlay-text::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
 }
