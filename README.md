@@ -1,71 +1,71 @@
-Text Enlarger
+# Text Enlarger Overlay
 
-MVP (v1.0.0) → Enhancements (v1.1.0)
+A browser-based tool that allows users to enlarge text overlays on web pages.  
+This project started as a basic MVP and has evolved with usability and accessibility improvements.
 
-Project Evolution
-Version	Branch	Key Features
-v1.0.0	main	• Basic text overlay
-• Simple text enlargement
-v1.1.0	feature/improvements	• Overlay resizing
-• Font-size increment/decrement
-• ARIA roles & keyboard accessibility
+---
 
+## Quick Demo
 
-MVP (v1.0.0) → Enhancements (v1.1.0)
+### Overlay Resizing (v1.1.0)
+![Demo of Overlay Resizing](./assets/demo_v1.1_resize_overlay.gif)
 
-Overview
+### Font Resizing & Scrolling (v1.1.0)
+![Demo of Font Resizing and Scrolling](./assets/demo_v1.1.gif)
 
-Text Enlarger is a browser-based tool that allows users to enlarge text overlays on web pages. The project demonstrates iterative development, starting with a basic MVP and progressing to enhanced functionality with usability and accessibility improvements.
+---
 
-MVP (v1.0.0)
-Features
+## Features
 
-Display a text overlay on the page.
+| Version | Key Features |
+|---------|--------------|
+| **v1.0.0 (MVP)** | Basic text overlay, simple text enlargement |
+| **v1.1.0 (Enhancements)** | Overlay resizing, font-size increment/decrement, ARIA roles & keyboard accessibility |
 
-Basic text enlargement functionality.
+---
 
-Limitations
+## Installation & Usage
 
-No overlay resizing.
+### Option 1: Browser Extension Setup
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/Tafarigit/text-enlarger-overlay.git
+   ```
 
-No step-wise font-size controls.
+2. Open your browser’s Extensions page.
 
-Accessibility (ARIA roles) not implemented.
+3. Enable Developer Mode.
 
-Enhancements (v1.1.0)
-New Features
+4. Click Load Unpacked → select the project folder.
 
-Overlay Resizing: Users can drag the overlay to resize it.
+5. Activate the overlay on any webpage and use the resizing/font-size controls.
 
-Font-Size Controls: Increment and decrement buttons to adjust text size in steps.
+### Option 2: Local Development
 
-Accessibility: Added ARIA roles and keyboard navigation for improved usability.
+1. Clone the repository.
 
-How It Works
+2. Open content.js in a test page or local dev environment.
 
-The script listens for user interactions to resize the overlay and change text size dynamically.
+3. Use the overlay and font-size controls as described.
 
-Accessibility attributes ensure the overlay is navigable via keyboard and screen readers.
+## Feedback
 
-Installation & Usage
+Please Provide Feedback Here: [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSdEzKfLBl48y0AuxLSX04TS8Y5ogVv5E4J1eT1DOj0kCiLVTg/viewform?usp=sharing&ouid=109116434720443068231)
 
-Clone the repository:
-
-git clone https://github.com/Tafarigit/text-enlarger-overlay.git
-
-
-Open content.js in your browser extension or local dev environment.
-
-Load the extension (if using browser extension setup) or run locally.
-
-Use the overlay resizing and font-size controls as needed.
-
-Notes
+## Development Notes
 
 Branching History:
 
-main branch contains the MVP version.
+main → MVP version
 
-feature/improvements branch contains the enhanced version with all improvements.
+feature/improvements → enhanced version
 
-Future updates may include additional customization options and further accessibility improvements.
+Future Updates: Additional customization options and accessibility improvements.
+
+
+
+
+
+
+
+
